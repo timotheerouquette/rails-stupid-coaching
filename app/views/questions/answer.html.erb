@@ -1,0 +1,18 @@
+<!-- app/views/questions/answer.html.erb -->
+
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <p> <%= @question %> </p>
+    <p><em>- You</em></p>
+    <% if @question == 'I am going to work'%>
+      <p><%= 'Great'%></p>
+    <% elsif @question.include?("?") %>
+      <p><%= 'Silly question, get dressed and go to work!'%></p>
+    <% else %>
+      <p><%= "I don't care, get dressed and go to work!" %></p>
+    <% end %>
+    <p><em>- Your coach</em></p>
+  </body>
+</html>
